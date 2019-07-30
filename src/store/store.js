@@ -6,7 +6,16 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   // 设置状态
   state: {
-    count: 0
+    count: 0,
+    todos: [
+      { id: 1, text: '啦啦啦啦', done: true },
+      { id: 2, text: '呵呵呵', done: false }
+    ]
+  },
+  getter: {
+    doneTodos: state => {
+      return state.todos.filter(todo => todo.done)
+    }
   },
   mutations: {
     // 改变状态
