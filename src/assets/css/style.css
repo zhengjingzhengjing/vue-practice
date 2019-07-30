@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'svg';
+  src:  url('../fonts/svg.eot?myuvee');
+  src:  url('../fonts/svg.eot?myuvee#iefix') format('embedded-opentype'),
+    url('../fonts/svg.ttf?myuvee') format('truetype'),
+    url('../fonts/svg.woff?myuvee') format('woff'),
+    url('../fonts/svg.svg?myuvee#svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'svg' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sjkb:before {
+  content: "\e900";
+}
+.icon-ybp:before {
+  content: "\e901";
+}
+.icon-yygl:before {
+  content: "\e902";
+}
